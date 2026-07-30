@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<title>Muziek Bingo</title>
+<style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f5f5f5; }
+    .navbar {
+        background: #333;
+        padding: 15px;
+        text-align: center;
+    }
+    .navbar button {
+        background: #fff;
+        border: none;
+        padding: 10px 20px;
+        margin: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 6px;
+    }
+    .navbar button:hover {
+        background: #ddd;
+    }
+    .card {
+        width: 400px;
+        margin: 30px auto;
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        border: 2px solid #333;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    td {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: center;
+        cursor: pointer;
+        font-size: 14px;
+    }
+    td.active {
+        background: #7ed957;
+        color: #000;
+        font-weight: bold;
+    }
+</style>
+<script>
+function showCard(nr) {
+    document.querySelectorAll('.card').forEach(c => c.style.display = 'none');
+    document.getElementById('kaart' + nr).style.display = 'block';
+}
+
+function toggleCell(cell) {
+    cell.classList.toggle('active');
+}
+</script>
+</head>
+<body>
+
+<div class="navbar">
+    <button onclick="showCard(1)">Kaart 1</button>
+    <button onclick="showCard(2)">Kaart 2</button>
+    <button onclick="showCard(3)">Kaart 3</button>
+    <button onclick="showCard(4)">Kaart 4</button>
+    <button onclick="showCard(5)">Kaart 5</button>
+</div>
+
+<!-- Kaart 1 -->
+<div class="card" id="kaart1" style="display:none;">
+    <table>
+        <tr>
+            <td onclick="toggleCell(this)">Olivia Rodrigo – my way</td>
+            <td onclick="toggleCell(this)">Sabrina Carpenter – Espresso</td>
+            <td onclick="toggleCell(this)">Lady Gaga – Bad Romance</td>
+            <td onclick="toggleCell(this)">Tate McRae – greedy</td>
+        </tr>
+        <tr>
+            <td onclick="toggleCell(this)">The Weeknd – Earned It</td>
+            <td onclick="toggleCell(this)">Ariana Grande – Dangerous Woman</td>
+            <td onclick="toggleCell(this)">Michael Jackson – Beat It</td>
+            <td onclick="toggleCell(this)">Zara Larsson – Lush Life</td>
+        </tr>
+        <tr>
+            <td onclick="toggleCell(this)">TLC – No Scrubs</td>
+            <td onclick="toggleCell(this)">Nirvana – Teen Spirit</td>
+            <td onclick="toggleCell(this)">Jennifer Lopez – On The Floor</td>
+            <td onclick="toggleCell(this)">Swedish House Mafia – Moth To A Flame</td>
+        </tr>
+        <tr>
+            <td onclick="toggleCell(this)">Shakira – Girls Trip</td>
+            <td onclick="toggleCell(this)">Tyla – She Did It Again</td>
+            <td onclick="toggleCell(this)">The Weeknd – Often</td>
+            <td onclick="toggleCell(this)">Lady Gaga – Paparazzi</td>
+        </tr>
+    </table>
+</div>
+
+<!-- Kaart 2 -->
+<div class="card" id="kaart2" style="display:none;">
+    <table>
+        <tr>
+            <td onclick="toggleCell(this)">Olivia Rodrigo – stupid song</td>
+            <td onclick="toggleCell(this)">Sabrina Carpenter – Please Please Please</td>
+            <td onclick="toggleCell(this)">Lady Gaga – LoveGame</td>
+            <td onclick="toggleCell(this)">Tate McRae – exes</td>
+        </tr>
+        <tr>
+            <td onclick="toggleCell(this)">The Weeknd – One Of The Girls</td>
+            <td onclick="toggleCell(this)">Ariana Grande – God Is A Woman</td>
+            <td onclick="toggleCell(this)">Michael Jackson – Dirty Diana</td>
+            <td onclick="toggleCell(this)">Zara Larsson – Pretty Ugly</td>
+        </tr>
+        <tr>
+            <td onclick="toggleCell(this)">TLC – No Scrubs</td>
+            <td onclick="toggleCell(this)">Nirvana – Teen Spirit</td>
+            <td onclick="toggleCell(this)">Jennifer Lopez – On The Floor</td>
+            <td onclick="toggleCell(this)">Swedish House Mafia – Moth To A Flame</td>
+        </tr>
+        <tr>
+            <td onclick="toggleCell(this)">Shakira – Girls Trip</td>
+            <td onclick="toggleCell(this)">Tyla – She Did It Again</td>
+            <td onclick="toggleCell(this)">The Weeknd – Often</td>
+            <td onclick="toggleCell(this)">Lady Gaga – Paparazzi</td>
+        </tr>
+    </table>
+</div>
+
+<!-- Kaart 3 -->
+<div class="card" id="kaart3" style="display:none;">
+    <table>
+        <tr>
+            <td onclick="toggleCell(this)">Olivia Rodrigo – lacy</td>
+            <td onclick="toggleCell(this)">Sabrina Carpenter – Taste</td>
+            <td onclick="toggleCell(this)">Lady Gaga – Judas</td>
+            <td onclick="toggleCell(this)">Tate McRae – sports car</td>
+        </tr>
+        <tr>
+            <td onclick="toggleCell(this)">The Weeknd – House Of Balloons</td>
+            <td onclick="toggleCell(this)">Ariana Grande – Side To Side</td>
+            <td onclick="toggleCell(this)">Michael Jackson – Wanna Be Startin’ Somethin’</td>
+            <td onclick="toggleCell(this)">Zara Larsson – Midnight Sun</td>
+        </tr>
+        <tr>
+            <td onclick="toggleCell(this)">TLC – No Scrubs</td>
+            <td onclick="toggleCell(this)">Nirvana – Teen Spirit</td>
+            <td onclick="toggleCell(this)">Jennifer Lopez – On The Floor</td>
+            <td onclick="toggleCell(this)">Swedish House Mafia – Moth To A Flame</td>
+        </tr>
+        <tr>
+            <td onclick="toggleCell(this)">Shakira – Girls Trip</td>
+            <td onclick="toggleCell(this)">Tyla – She Did It Again</td>
+            <td onclick="toggleCell(this)">The Weeknd – Often</td>
+            <td onclick="toggleCell(this)">Lady Gaga – Paparazzi</td>
+        </tr>
+    </table>
+</div>
+
+<!-- Kaart 4 -->
+<div class="card" id="kaart4" style="display:none;">
+    <table>
+        <tr>
+            <td onclick="toggleCell(this)">Olivia Rodrigo – drop dead</td>
+            <td onclick="toggleCell(this)">Sabrina Carpenter – House Tour</td>
+            <td onclick="toggleCell(this)">Lady Gaga – Paparazzi</td>
+            <td onclick="toggleCell(this)">Tate McRae – Just Keep Watching</td>
+        </tr>
+        <tr>
+            <td onclick="toggleCell(this)">The Weeknd – Earned It</td>
+            <td onclick="toggleCell(this)">Ariana Grande – Love Me Harder</td>
+            <td onclick="toggleCell(this)">Michael Jackson – Heaven Can Wait</td>
+            <td onclick="toggleCell(this)">Zara Larsson – Eurosummer</td>
+        </tr>
+        <tr>
+            <td onclick="toggleCell(this)">TLC – No Scrubs</td>
+            <td onclick="toggleCell(this)">Nirvana – Teen Spirit</td>
+            <td onclick="toggleCell(this)">Jennifer Lopez – On The Floor</td>
+            <td onclick="toggleCell(this)">Swedish House Mafia – Moth To A Flame</td>
+        </tr>
+        <tr>
+            <td onclick="toggleCell(this)">Shakira – Girls Trip</td>
+            <td onclick="toggleCell(this)">Tyla – She Did It Again</td>
+            <td onclick="toggleCell(this)">The Weeknd – Often</td>
+            <td onclick="toggleCell(this)">Lady Gaga – Paparazzi</td>
+        </tr>
+    </table>
+</div>
+
+<!-- Kaart 5 -->
+<div class="card" id="kaart5" style="display:none;">
+    <table>
+        <tr>
+            <td onclick="toggleCell(this)">Olivia Rodrigo – pretty isn’t pretty</td>
+            <td onclick="toggleCell(this)">Sabrina Carpenter – Espresso</td>
+            <td onclick="toggleCell(this)">Lady Gaga – Bad Romance</td>
+            <td onclick="toggleCell(this)">Tate McRae – greedy</td>
+        </tr>
+        <tr>
+            <td onclick="toggleCell(this)">The Weeknd – Often</td>
+            <td onclick="toggleCell(this)">Ariana Grande – Dangerous Woman</td>
+            <td onclick="toggleCell(this)">Michael Jackson – Beat It</td>
+            <td onclick="toggleCell(this)">Zara Larsson – Lush Life</td>
+        </tr>
+        <tr>
+            <td onclick="toggleCell(this)">TLC – No Scrubs</td>
+            <td onclick="toggleCell(this)">Nirvana – Teen Spirit</td>
+            <td onclick="toggleCell(this)">Jennifer Lopez – On The Floor</td>
+            <td onclick="toggleCell(this)">Swedish House Mafia – Moth To A Flame</td>
+        </tr>
+        <tr>
+            <td onclick="toggleCell(this)">Shakira – Girls Trip</td>
+            <td onclick="toggleCell(this)">Tyla – She Did It Again</td>
+            <td onclick="toggleCell(this)">The Weeknd – Earned It</td>
+            <td onclick="toggleCell(this)">Lady Gaga – Paparazzi</td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>
